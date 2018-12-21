@@ -1,0 +1,143 @@
+.game__logo {
+  height: 200px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.snake__left, .snake__right {
+  height: 200px;
+  
+
+}
+.snakes {
+  margin-top: 340px;
+}
+
+.snake__right {
+  margin-left: 627px;
+}
+
+.gosef {
+  position: absolute;
+
+}
+
+.character__left {
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  left: 15%;
+  top: 40%;
+
+  &.is-rayan {
+    background-image: url(../images/fighters/Rayan/RayanNormalG.png);
+    background-size: cover;
+  }
+  &.is-maeva {
+    background-image: url(../images/fighters/Maeva/MaevaNormalG.png);
+    background-size: cover;
+    margin-left: 70px;
+  }
+  &.is-baptiste {
+    background-image: url(../images/fighters/Baptiste/BaptisteNormalG.png);
+    background-size: cover;
+  }
+  &.is-mathias {
+    background-image: url(../images/fighters/Mathias/MathiasNormalG.png);
+    background-size: cover;
+  }
+  &.is-justine {
+    background-image: url(../images/fighters/Justine/JustineNormalG.png);
+    background-size: cover;
+  }
+  &.is-brontis {
+    background-image: url(../images/fighters/Brontis/BrontisNormalG.png);
+    background-size: cover;
+  }
+  &.is-bastien {
+    background-image: url(../images/fighters/Bastien/BastienNormalG.png);
+    background-size: cover;
+  }
+  &.is-aymeric {
+    background-image: url(../images/fighters/Aymeric/AymericNormalG.png);
+    background-size: cover;
+  }
+}
+
+.character__right {
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  left: 52%;
+  top: 40%;
+
+  &.is-rayan {
+    background-image: url(../images/fighters/Rayan/RayanNormalD.png);
+    background-size: cover;
+  }
+  &.is-maeva {
+    background-image: url(../images/fighters/Maeva/MaevaNormalD.png);
+    background-size: cover;
+  }
+  &.is-baptiste {
+    background-image: url(../images/fighters/Baptiste/BaptisteNormalD.png);
+    background-size: cover;
+  }
+  &.is-mathias {
+    background-image: url(../images/fighters/Mathias/MathiasNormalD.png);
+    background-size: cover;
+  }
+  &.is-justine {
+    background-image: url(../images/fighters/Justine/JustineNormalD.png);
+    background-size: cover;
+  }
+  &.is-brontis {
+    background-image: url(../images/fighters/Brontis/BrontisNormalD.png);
+    background-size: cover;
+  }
+  &.is-bastien {
+    background-image: url(../images/fighters/Bastien/BastienNormalD.png);
+    background-size: cover;
+  }
+  &.is-aymeric {
+    background-image: url(../images/fighters/Aymeric/AymericNormalD.png);
+    background-size: cover;
+  }
+}
+
+.background {
+  width:100vw;
+  height:100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+
+
+  &.is-arena {
+    background-image: url(../images/maps/arena.jpg) ;
+    background-size: cover;
+  }
+  &.is-gladiator {
+    background-image: url(../images/maps/gladiator.jpg) ;
+    background-size: cover;
+  }
+  &.is-ring {
+    background-image: url(../images/maps/ring.jpg) ;
+    background-size: cover;
+  }
+}
+
+.life {
+  width: 300px;
+  height: 20px;
+  position: fixed;
+  top: 0;
+
+  div {
+    height: 100%;
+    width: 100%;
+    background: red;
+  }
+}

@@ -1,0 +1,72 @@
+.home {
+  background-color:#171717;
+  // font-family: 'PressStart2P';
+  text-align: center;
+  // margin: 0;
+  // padding: 0;
+}
+
+.home__logo img {
+  height: 250px;
+  // display: flex;
+  // justify-content: center;
+  margin-top: 10px;
+}
+
+// .home__button {
+//   background-color: none;
+//   border: none;
+//   color: white;
+//   padding: 15px 32px;
+//   text-align: center;
+//   text-decoration: none;
+//   display: inline-block;
+//   font-size: 16px;
+//   transform: translateY(-45px);
+// }
+
+.button__pressToStart {
+  animation: blink 4s infinite;
+  font-family: 'PressStart2P', 'atari_full', sans-serif;
+  font-size: 20px;
+  position: relative;
+  top: 120px;
+  // border: none;
+  // color: white;
+  padding: 15px 32px;
+  // text-align: center;
+  // text-decoration: none;
+  // display: inline-block;
+  font-size: 16px;
+  height: 70px;
+}
+
+@keyframes blink {
+  0%{color: rgb(48, 48, 48);}
+  15%{color: rgb(0, 148, 185);}
+  30%{color: rgb(255, 0, 0);}
+  30%{color: rgb(48, 48, 48);;}
+  45%{color: rgb(0, 206, 86);}
+  60%{color: orange;}
+  75%{color: rgb(48, 48, 48);}
+  100%{color: rgb(161, 10, 175);}
+}
+
+.home__gif {
+  display: flex;
+  // align-items: center;
+  // height: 480px;
+  margin-left: 70px;
+  margin-top: 68px;
+}
+.home__gif--mathias {
+  // transform: translate(00px);
+  height: 350px;
+  width: auto;
+}
+.home__gif--brontis {
+  transform: translate(780px);
+  height: 350px;
+  width: auto;
+}
+

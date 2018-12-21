@@ -1,0 +1,574 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'PressStart2P';
+  src: url("pressstart2p-regular-webfont.06028913.woff2") format("woff2"), url("pressstart2p-regular-webfont.7ebe2e1b.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+.home {
+  background-color: #171717;
+  text-align: center; }
+
+.home__logo img {
+  height: 250px;
+  margin-top: 10px; }
+
+.button__pressToStart {
+  animation: blink 4s infinite;
+  font-family: 'PressStart2P', 'atari_full', sans-serif;
+  font-size: 20px;
+  position: relative;
+  top: 120px;
+  padding: 15px 32px;
+  font-size: 16px;
+  height: 70px; }
+
+@keyframes blink {
+  0% {
+    color: #303030; }
+  15% {
+    color: #0094b9; }
+  30% {
+    color: red; }
+  30% {
+    color: #303030; }
+  45% {
+    color: #00ce56; }
+  60% {
+    color: orange; }
+  75% {
+    color: #303030; }
+  100% {
+    color: #a10aaf; } }
+
+.home__gif {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 68px; }
+
+.home__gif--mathias {
+  height: 350px;
+  width: auto; }
+
+.home__gif--brontis {
+  transform: translate(780px);
+  height: 350px;
+  width: auto; }
+
+.credits__name {
+  background-color: gold; }
+  .credits__name .credits__name--rayan {
+    background-color: lightsalmon; }
+
+.content {
+  display: flex;
+  margin-left: 70px; }
+
+.end {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #171717;
+  overflow: hidden; }
+
+img {
+  max-width: 300%;
+  max-height: 100%; }
+
+.home__logo--end {
+  height: 200px;
+  display: flex;
+  justify-content: center; }
+
+.content__crown1 {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 200px;
+  top: 268px; }
+
+.content__crown2 {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  right: 200px;
+  top: 268px; }
+
+.button__pressToStart--end {
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  top: 310px;
+  animation: blink 4s infinite;
+  font-family: 'PressStart2P'; }
+
+@keyframes blink {
+  0% {
+    color: #303030; }
+  15% {
+    color: #0094b9; }
+  30% {
+    color: red; }
+  30% {
+    color: #303030; }
+  45% {
+    color: #00ce56; }
+  60% {
+    color: orange; }
+  75% {
+    color: #303030; }
+  100% {
+    color: #a10aaf; } }
+
+.winner__name {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'PressStart2P';
+  margin-top: 20px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+* {
+  box-sizing: border-box; }
+
+.characters {
+  background: #373131; }
+
+.penone {
+  width: 800px;
+  opacity: 0;
+  position: relative;
+  animation: 1s appear 1 forwards;
+  margin-left: 24%;
+  margin-top: 40px; }
+
+.catchphrase {
+  font-family: 'PressStart2P', 'atari_full', sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  color: white; }
+
+.element {
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  margin-left: 20px; }
+
+.element:nth-child(-n+4) {
+  margin-bottom: 20px; }
+
+.element.rayan {
+  background: url("rayan.5dbfcd9b.png") 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0; }
+
+.element.maeva {
+  background: url("maeva.80692504.png") 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0; }
+
+.element.baptiste {
+  background: url("baptiste.3b2b1e60.png") 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0; }
+
+.element.mathias {
+  background: url("mathias.f634bf41.png") 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0; }
+
+.element.justine {
+  background: url("justine.94d18f1f.png") 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0; }
+
+.element.brontis {
+  background: url("brontis.373a676b.png") 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0; }
+
+.element.bastien {
+  background: url("bastien.bb0b16bc.png") 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0; }
+
+.element.aymeric {
+  background: url("aymeric.bf4a4b3d.png") 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0; }
+
+.stage {
+  max-width: 890px;
+  height: 600px; }
+
+.back {
+  height: 110px; }
+
+@-webkit-keyframes appear {
+  15% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes appear {
+  15% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes appear {
+  15% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes appear {
+  15% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.selected {
+  border: 10px blue solid; }
+
+.selectedPlayerTwo {
+  border: 10px red solid; }
+
+.band {
+  margin-top: 87px; }
+
+.go {
+  position: absolute;
+  margin-top: 66px;
+  margin-left: 1150px;
+  width: 100px; }
+
+.go:hover {
+  transform: translateY(10px); }
+
+.maps {
+  background: #373131; }
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+  margin-left: 70px; }
+
+.pen {
+  margin-left: 20%;
+  margin-top: 50px;
+  width: 100%;
+  opacity: 0;
+  position: relative;
+  animation: 1s appear 1 forwards; }
+
+.element__maps {
+  width: 202px;
+  height: inherit;
+  margin: 0 7px 0 0;
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 30px; }
+
+.element__maps.arena {
+  background: url("arena.8b67e108.jpg") 45% 0 no-repeat;
+  background-size: cover; }
+
+.element__maps.gladiator {
+  background: url("gladiator.cb9d94af.jpg") 45% 0 no-repeat;
+  background-size: cover; }
+
+.element__maps.ring {
+  background: url("ring.f29612e2.jpg") 45% 0 no-repeat;
+  background-size: cover; }
+
+.element__maps {
+  width: 250px;
+  height: 250px;
+  margin-left: 20px; }
+
+.stage {
+  max-width: 1000px;
+  height: 600px; }
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes appear {
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes appear {
+  100% {
+    opacity: 1; } }
+
+@keyframes appear {
+  100% {
+    opacity: 1; } }
+
+.selected {
+  border: 10px blue solid; }
+
+.selectedPlayerTwo {
+  border: 10px red solid; }
+
+.band__maps {
+  margin-top: 150px; }
+
+.go__maps {
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 1150px;
+  width: 100px; }
+
+.go__maps:hover {
+  transform: translateY(10px); }
+
+.game__logo {
+  height: 200px;
+  margin-top: 10px;
+  text-align: center; }
+
+.snake__left, .snake__right {
+  height: 200px; }
+
+.snakes {
+  margin-top: 340px; }
+
+.snake__right {
+  margin-left: 627px; }
+
+.gosef {
+  position: absolute; }
+
+.character__left {
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  left: 15%;
+  top: 40%; }
+  .character__left.is-rayan {
+    background-image: url(RayanNormalG.b9876f81.png);
+    background-size: cover; }
+  .character__left.is-maeva {
+    background-image: url(MaevaNormalG.6e36f173.png);
+    background-size: cover;
+    margin-left: 70px; }
+  .character__left.is-baptiste {
+    background-image: url(BaptisteNormalG.ef8a8e02.png);
+    background-size: cover; }
+  .character__left.is-mathias {
+    background-image: url(MathiasNormalG.0f14959e.png);
+    background-size: cover; }
+  .character__left.is-justine {
+    background-image: url(JustineNormalG.b24238f2.png);
+    background-size: cover; }
+  .character__left.is-brontis {
+    background-image: url(BrontisNormalG.4b5c4843.png);
+    background-size: cover; }
+  .character__left.is-bastien {
+    background-image: url(BastienNormalG.b226152a.png);
+    background-size: cover; }
+  .character__left.is-aymeric {
+    background-image: url(AymericNormalG.681bc138.png);
+    background-size: cover; }
+
+.character__right {
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  left: 52%;
+  top: 40%; }
+  .character__right.is-rayan {
+    background-image: url(RayanNormalD.4ff4633a.png);
+    background-size: cover; }
+  .character__right.is-maeva {
+    background-image: url(MaevaNormalD.e7bfdb4c.png);
+    background-size: cover; }
+  .character__right.is-baptiste {
+    background-image: url(BaptisteNormalD.da5a4376.png);
+    background-size: cover; }
+  .character__right.is-mathias {
+    background-image: url(MathiasNormalD.992af584.png);
+    background-size: cover; }
+  .character__right.is-justine {
+    background-image: url(JustineNormalD.9b0d9d70.png);
+    background-size: cover; }
+  .character__right.is-brontis {
+    background-image: url(BrontisNormalD.3a5d81f6.png);
+    background-size: cover; }
+  .character__right.is-bastien {
+    background-image: url(BastienNormalD.fcfa3a51.png);
+    background-size: cover; }
+  .character__right.is-aymeric {
+    background-image: url(AymericNormalD.4c4fea1e.png);
+    background-size: cover; }
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%); }
+  .background.is-arena {
+    background-image: url(arena.8b67e108.jpg);
+    background-size: cover; }
+  .background.is-gladiator {
+    background-image: url(gladiator.cb9d94af.jpg);
+    background-size: cover; }
+  .background.is-ring {
+    background-image: url(ring.f29612e2.jpg);
+    background-size: cover; }
+
+.life {
+  width: 300px;
+  height: 20px;
+  position: fixed;
+  top: 0; }
+  .life div {
+    height: 100%;
+    width: 100%;
+    background: red; }

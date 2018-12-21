@@ -1,0 +1,76 @@
+.content {
+  display: flex;
+  margin-left: 70px;
+  
+}
+.end {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #171717;
+    overflow: hidden;
+  }
+
+img {
+  max-width: 300%;
+  max-height: 100%;
+}
+
+.home__logo--end {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.content__crown1 {
+position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 200px;
+  top: 268px;
+}
+
+.content__crown2 {
+position: absolute;
+  width: 200px;
+  height: 100px;
+  right: 200px;
+  top: 268px;
+}
+
+ .button__pressToStart--end {
+   font-size: 30px;
+   position: absolute;
+   left: 0; 
+   right: 0; 
+   margin-left: auto; 
+   margin-right: auto; 
+   width: 100vw;
+   top: 310px;
+   animation: blink 4s infinite;
+   font-family: 'PressStart2P';
+ }
+
+ @keyframes blink {
+  0%{color: rgb(48, 48, 48);}
+  15%{color: rgb(0, 148, 185);}
+  30%{color: rgb(255, 0, 0);}
+  30%{color: rgb(48, 48, 48);;}
+  45%{color: rgb(0, 206, 86);}
+  60%{color: orange;}
+  75%{color: rgb(48, 48, 48);}
+  100%{color: rgb(161, 10, 175);}
+ }
+
+ .winner__name {
+   text-transform: capitalize;
+   text-align: center;
+   font-family: 'PressStart2P';
+   margin-top: 20px;
+   color: white;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+ }

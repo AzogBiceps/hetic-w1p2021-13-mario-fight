@@ -1,0 +1,145 @@
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+*{
+  box-sizing: border-box;
+}
+
+.characters {
+  background: #373131;
+}
+.penone {
+  width: 800px;
+  // margin: 10px 250px 0;
+  opacity: 0;
+  position: relative;
+  animation: 1s appear 1 forwards;
+  // max-width: 2000PX;
+  margin-left: 24%;
+  margin-top: 40px;
+}
+.catchphrase {
+  font-family: 'PressStart2P', 'atari_full', sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.element {
+  // margin: 0 7px 0 0;
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 30px; 
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+.element:nth-child(-n+4) {
+  margin-bottom: 20px;
+}
+
+.element.rayan {
+  background: url('../images/characters/rayan.png') 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0;
+}
+.element.maeva {
+  background: url('../images/characters/maeva.png') 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0;
+}
+.element.baptiste {
+  background: url('../images/characters/baptiste.png') 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0;
+}
+.element.mathias {
+  background: url('../images/characters/mathias.png') 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0;
+}
+.element.justine {
+  background: url('../images/characters/justine.png') 45% 0 no-repeat;
+  background-size: cover;
+  background-color:#90B3C0;
+}
+.element.brontis {
+  background: url('../images/characters/brontis.png') 45% 0 no-repeat;
+  background-size: cover;
+  background-color:#90B3C0;
+}
+.element.bastien {
+  background: url('../images/characters/bastien.png') 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0;
+}
+.element.aymeric {
+  background: url('../images/characters/aymeric.png') 45% 0 no-repeat;
+  background-size: cover;
+  background-color: #90B3C0;
+}
+
+
+.stage {
+  max-width: 890px;
+  height: 600px;
+}
+.back {
+  height: 110px;
+}
+
+@-webkit-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.selected {
+  border: 10px blue solid;
+}
+.selectedPlayerTwo {
+  border: 10px red solid;
+}
+.band {
+  margin-top: 87px;
+}
+.go{
+  position: absolute;
+  margin-top: 66px;
+  margin-left: 1150px;
+  width: 100px;
+}
+.go:hover{
+  transform:translateY(10px) 
+}

@@ -8,7 +8,7 @@ Baptiste ITIER
 Mathias VINCELET
 Justine TAISANT
 
-https://battletimate.netlify.com/
+https://battletimatefight.netlify.com/
 
 
 
